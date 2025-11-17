@@ -1,8 +1,9 @@
- @import "tailwindcss";
-  /* index.css */
+ /* index.css */
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+@import "tailwindcss";
 
 /* Root variables for colors */
 :root {
@@ -24,6 +25,7 @@ body {
   padding: 0;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   color: var(--color-heading);
@@ -76,4 +78,3 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.8;
 }
-
