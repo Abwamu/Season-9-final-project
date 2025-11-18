@@ -7,16 +7,16 @@ const testimonials = [
     position: "Homeowner",
     message:
       "The smart appliances from this company have completely transformed my daily life. Efficient, stylish, and easy to use!",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=150&q=80",
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=150&q=80",
   },
-  
 ];
 
 const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
-        
+
         {/* Left: Text */}
         <div className="md:w-1/2 flex flex-col justify-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
@@ -28,7 +28,9 @@ const Testimonials = () => {
               key={index}
               className="mb-10 bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
             >
-              <p className="text-gray-600 text-lg mb-4 italic">"{testimonial.message}"</p>
+              <p className="text-gray-600 text-lg mb-4 italic">
+                "{testimonial.message}"
+              </p>
               <div className="flex items-center gap-4">
                 <img
                   src={testimonial.image}
@@ -36,8 +38,12 @@ const Testimonials = () => {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="text-gray-800 font-semibold">{testimonial.name}</h4>
-                  <p className="text-gray-500 text-sm">{testimonial.position}</p>
+                  <h4 className="text-gray-800 font-semibold">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-gray-500 text-sm">
+                    {testimonial.position}
+                  </p>
                 </div>
               </div>
             </div>
@@ -47,7 +53,7 @@ const Testimonials = () => {
         {/* Right: Illustration/Image */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1581091215366-1686a4de5b5a?auto=format&fit=crop&w=600&q=80"
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a2l0Y2hlbiUyMGFwcGxpYW5jZXN8ZW58MHx8MHx8fDA%3D"
             alt="Happy Customers"
             className="rounded-2xl shadow-lg w-full max-w-md object-cover"
           />
